@@ -5,6 +5,7 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 
 import com.duyangs.zbaselib.BaseActivity;
@@ -53,6 +54,7 @@ public class MainActivity extends BaseActivity implements MainAdapter.OnItemClic
         //设置Item增加、移除动画
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
+        Log.d("test", "测试提交");
     }
 
     @Override
